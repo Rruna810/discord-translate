@@ -22,7 +22,7 @@ def keep_alive():
     t.start()
 
 # ===== Discord設定 =====
-TARGET_CHANNEL_ID = 1451246372593336352
+TARGET_CHANNEL_ID = CHANNEL_ID
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -61,3 +61,4 @@ async def on_message(message: discord.Message):
 
 keep_alive()
 bot.run(os.environ["TOKEN"])
+
